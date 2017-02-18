@@ -1,39 +1,13 @@
 //in iife variables capitalize the first letter
 var SolarSystem = (function(){
-	var planets = ["mercury", "mars", "earth", "venus", "jupiter", "saturn", "neptune", "uranus"]
 	var dwarfPlanets = ["pluto"]
-	var numPlanetsPeopleLandedOn = 0;
-	var stars = ["sun", "Alpha Centauri", "Wolf 359"];
 	return {
-		getPlanets: function(){
-			return planets;
-		},
-		getPlanetsLandedPeopleOn: function(){
-			return numPlanetsPeopleLandedOn;
-		},
-		setPlanetsLandedPeopleOn: function(){
-			numPlanetsPeopleLandedOn++;
-		},
 		getDwarfPlanets: function(){
 			return "they are rejects";
 		},
 		setDwarfPlanets: function(lumpOfRock){
 			dwarfPlanets.push(lumpOfRock);
-		},
-		getStars: function(){
-			return stars;
-		},
-		setStars: function(newStar){
-			stars.push(newStar);
 		}
 	}
 })();
-
-// console.log("planets: ", SolarSystem.getPlanets());
-// console.log("planets with people: ", SolarSystem.getPlanetsLandedPeopleOn());
-// SolarSystem.setSpaceships("Voyager 1");
-// SolarSystem.setSpaceships("Voyager 2");
-// SolarSystem.setSpaceships("Apollo");
-// SolarSystem.setSpaceships("Gemini");
-// console.log("spaceships: ", SolarSystem.getSpaceships());
 
