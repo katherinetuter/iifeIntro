@@ -4,7 +4,6 @@ var SolarSystem = (function(){
 	var dwarfPlanets = ["pluto"]
 	var numPlanetsPeopleLandedOn = 0;
 	var stars = ["sun", "Alpha Centauri", "Wolf 359"];
-	var age = 0;
 	return {
 		getPlanets: function(){
 			return planets;
@@ -26,21 +25,15 @@ var SolarSystem = (function(){
 		},
 		setStars: function(newStar){
 			stars.push(newStar);
-		},
-		getSolarSystemAge: function(){
-			return age;
-		},
-		setSolarSystemAge: function(){
-			age++;
 		}
 	}
 })();
 
-console.log("planets: ", SolarSystem.getPlanets());
-console.log("planets with people: ", SolarSystem.getPlanetsLandedPeopleOn());
-SolarSystem.setSpaceships("Voyager 1");
-SolarSystem.setSpaceships("Voyager 2");
-SolarSystem.setSpaceships("Apollo");
-SolarSystem.setSpaceships("Gemini");
-console.log("spaceships: ", SolarSystem.getSpaceships());
+// console.log("planets: ", SolarSystem.getPlanets());
+// console.log("planets with people: ", SolarSystem.getPlanetsLandedPeopleOn());
+// SolarSystem.setSpaceships("Voyager 1");
+// SolarSystem.setSpaceships("Voyager 2");
+// SolarSystem.setSpaceships("Apollo");
+// SolarSystem.setSpaceships("Gemini");
+// console.log("spaceships: ", SolarSystem.getSpaceships());
 
