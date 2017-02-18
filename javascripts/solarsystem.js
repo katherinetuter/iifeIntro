@@ -16,7 +16,15 @@ var SolarSystem = (function(){
 		setPlanetsLandedPeopleOn: function(){
 			numPlanetsPeopleLandedOn++;
 		},
-		
+		getSpaceships: function(){
+			return spaceships;
+		},
+		setSpaceships: function(newSpaceship){
+			spaceships.push(newSpaceship);
+		},
+		wreckSpaceships: function(){
+			spaceships.pop();
+		},
 		getDwarfPlanets: function(){
 			return "they are rejects";
 		},
@@ -38,11 +46,11 @@ var SolarSystem = (function(){
 	}
 })();
 
-// console.log("planets: ", SolarSystem.getPlanets());
-// console.log("planets with people: ", SolarSystem.getPlanetsLandedPeopleOn());
-// SolarSystem.setSpaceships("Voyager 1");
-// SolarSystem.setSpaceships("Voyager 2");
-// SolarSystem.setSpaceships("Apollo");
-// SolarSystem.setSpaceships("Gemini");
-// console.log("spaceships: ", SolarSystem.getSpaceships());
+console.log("planets: ", SolarSystem.getPlanets());
+console.log("planets with people: ", SolarSystem.getPlanetsLandedPeopleOn());
+SolarSystem.setSpaceships("Voyager 1");
+SolarSystem.setSpaceships("Voyager 2");
+SolarSystem.setSpaceships("Apollo");
+SolarSystem.setSpaceships("Gemini");
+console.log("spaceships: ", SolarSystem.getSpaceships());
 
